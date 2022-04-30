@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>e-Park</title>
+</head>
+<body>
+
+    <div class="nav">
+        <img src="https://epark.com.br/wp-content/uploads/2021/08/e-park-logo-branco@025x.png" alt="Logo do Jurassic_Park_logo">
+        <h1>e-patio</h1>
+        <ul>
+            <li data-js="home">Home</li>
+            <li data-js="cadastro">Cadastro</li>
+            <li data-js="relatorio">Relatórios</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="cadastro">
+            <input type="text" id="nome" placeholder="Digite o nome do veiculo: " autocomplete="off">
+            <input type="text" id="placa" placeholder="Digite o placa do veiculo: " autocomplete="off">
+            <button data-js='bntCadastrar'>Cadastrar</button>
+        </div>
+        
+        <div class="info">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Placa</th>
+                        <th>Entrada</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id='patio'></tbody>
+            </table>
+        </div>
+
+    </div>
+        <div class="container-modal">
+        <div data-js="modal" class="modal">
+            <span data-js="span-modal" class="close" title="Close Modal">close</span>
+            <form class="modal-content" action="/action_page.php">
+            <div class="container-modal">
+                <h1>Obrigado por visitar o projeto</h1>
+                <h2>Em implementação!</h2>
+                <p>Você é Dev?</p>
+                <p>Se sim, clique no botão abaixo para colaborar no projeto!</p>
+                <p>Sua ajuda é muito importante!</p>
+            
+                <div class="clearfix">
+                    <a target="_blank" href='https://github.com/Wellingtoneo' data-js="btn-fechar" class="cancelbtn"><i class="fa fa-github" aria-hidden="true"></i>Repositorio Github</a>
+                    <img src="https://epark.com.br/wp-content/uploads/2021/08/e-park-logo-branco@025x.png" alt="Logo do Jurassic_Park_logo">
+                </div>
+            </div>
+            </form>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

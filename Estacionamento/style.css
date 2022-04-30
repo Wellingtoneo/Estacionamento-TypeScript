@@ -1,0 +1,271 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;  
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    background: url("https://blog.valimadvogados.com.br/wp-content/uploads/2018/02/estacionamento-interno-aeroporto-guarulhos.jpg") rgba(0,0,0,1);
+    background-size: cover;
+    overflow: hidden
+}
+
+.nav{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    background-color: rgba(136, 243, 13, 0.5);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 800;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.nav img{
+    width: 100px;
+    height: 60px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+.nav ul li {
+    list-style: none;
+    margin: 0 10px;
+    cursor: pointer;
+    height: 100%;
+}
+
+.nav ul li:hover{
+    color: rgb(3, 3, 3);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 100vh;
+    background-color: rgba(0,0,0, 0.6);
+    position: absolute; 
+    top: 65px;
+    border-radius: 10px;
+}
+
+.cadastro{
+    position: absolute;
+    top: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+    width: 80%;
+    align-items: flex-start;
+    align-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.cadastro input{
+    display: flex;
+    align-items: center;
+    border: solid 1px rgb(136, 243, 13);
+    background-color: rgba(0,0,0, 0.5);
+    color: white;
+    padding: 14px;
+    border-radius: 10px;
+    width: 100%;
+    margin-right: 15px;
+    font-size: 16px;
+}
+
+.cadastro button{
+    border: solid 1px rgb(136, 243, 13);
+    background-color: rgba(0,0,0, 0.5);
+    color: white;
+    border-radius: 10px;
+    top: 10px;
+    font-size: 16px;
+    width: 100%;
+    height: 50px;
+
+}
+.cadastro button:hover{
+    background-color: rgba(136, 243, 13);
+    cursor: pointer;
+}
+
+.info {
+    position: absolute;
+    top:100px;
+    width: 80%;
+}
+
+.info::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+table{
+    position: relative;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: #fff;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+}
+
+table thead{
+    background-color: rgba(0,0,0, 0.6);
+    width: 100%;
+    height: 50px;
+}
+
+tr{
+    width: 100%;
+    height: 50px;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(255,255,255, 0.5);
+    color: black
+}
+
+td button{
+    background-color: rgba(243, 40, 13, 0.5);
+    border: none;
+    border-radius: 10px;
+    top: 10px;
+    font-size: 16px;
+    width: 50%;
+    height: 25px;
+    color: white
+}
+
+.fa-power-off{
+    color:rgb(136, 243, 13);
+    font-size: 25px;
+}
+
+.fa-power-off:hover{
+    color:rgb(243, 21, 13);
+    cursor: pointer;
+}
+
+  /* Float cancel and delete buttons and add an equal width */
+  .cancelbtn, .deletebtn {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Add a color to the cancel button */
+  .cancelbtn {
+    background-color: chartreuse;
+    color: white;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 1.6em;
+    text-decoration: none;
+    margin-top: 15px;
+    width: 50%;
+  }
+  
+  .cancelbtn:hover{
+      background-color: rgba(128, 255, 0, 0.411);
+      border: solid 1px #fff;
+  }
+
+  .fa-github{
+      margin-right: 10px;
+  }
+  
+  .container-modal {
+    padding: 16px;
+    text-align: center;
+    font-family: serif;
+}
+
+.container-modal h1 {
+    color: chartreuse;
+    margin-bottom: 30px;
+}
+  
+.container-modal h2, p {
+    margin-bottom: 10px;
+    color: white;
+}
+
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #fff;
+    padding-top: 50px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #0e0c0c;
+    margin: 5% auto 15% auto;
+    width: 96%;
+    border-radius: 10px;
+  }
+  
+  /* Style the horizontal ruler */
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+   
+  /* The Modal Close Button (x) */
+  .close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #2cec12;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #f44336;
+    cursor: pointer;
+  }
+  
+  /* Clear floats */
+  .clearfix {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  /* Change styles for cancel button and delete button on extra small screens */
+  @media screen and (max-width: 300px) {
+    .cancelbtn, .deletebtn {
+       width: 100%;
+    }
+  }
